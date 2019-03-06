@@ -8,5 +8,7 @@ environment.plugins.prepend('Provide',
     jQuery: 'jquery'
   })
 )
-
+ environment.externals= {
+      "mapbox-gl": 'mapboxgl'
+   }
 module.exports = environment
