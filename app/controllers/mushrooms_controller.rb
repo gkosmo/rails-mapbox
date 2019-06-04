@@ -76,6 +76,6 @@ class MushroomsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def mushroom_params
-      params.require(:mushroom).permit(:name, :address)
+      params.require(:mushroom).permit(:name, :address, :country)
     end
 end

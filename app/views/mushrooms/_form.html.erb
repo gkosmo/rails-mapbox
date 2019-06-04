@@ -4,7 +4,8 @@
   <%= f.error_notification message: f.object.errors[:base].to_sentence if f.object.errors[:base].present? %>
 
   <div class="form-inputs">
-    <%= f.input :name, as: :select, input_html: {  class: "selectpicker countrypicker"  }  %>
+    <%= f.input :name %>
+    <%= f.input :country, as: :select, input_html: {  class: "selectpicker countrypicker"  }  %>
     <%= f.input :address%>
   </div>
 
